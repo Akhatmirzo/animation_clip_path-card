@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.wrap1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(249, 243, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: clip-path 0.5s ease-in-out;
+}
+
+.inner4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.inner0 {
+    background-color: blue;
+    clip-path: circle(15% at 0% 0%);
+    
+}
+
+.inner1 {
+    background-color: red;
+    clip-path: circle(15% at 0% 0%);
+    
+}
+
+.inner2 {
+    background-color: yellow;
+    clip-path: circle(15% at 0% 0%);
+}
+
+.inner3 {
+    background-color: green;
+    clip-path: circle(15% at 0% 0%);
+    
+}
+
+.inner4 {
+    background-color: purple;
+    clip-path: circle(15% at 0% 0%);
+}
+
+.box:hover .inner0, .inner0:hover .inner1, .inner1:hover .inner2, .inner2:hover .inner3, .inner3:hover .inner4 {
+    clip-path: circle(100%);
+    transition: clip-path 0.5s ease-in-out;
+}
+
+/* !Wrap 2 */
+
+.wrap2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newBox {
+    width: 400px;
+    height: 600px;
+    border: 1px solid ;
+    /* overflow: hidden; */
+    z-index: 10;
+}
+
+.newBox h2 {
+    position: relative;
+    top: -355%;
+    text-align: center;
+    z-index: -2;
+}
+
+.anim-clip {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 11;
+}
+
+.clip1 {
+    clip-path: circle(15% at 100% 0%);
+    background-image: url('https://images.pexels.com/photos/18273135/pexels-photo-18273135.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    
+}
+
+.clip1:hover {
+    clip-path: circle(100%);
+    z-index: 1;
+}
+
+.clip2 {
+    position: relative;
+    top: -100%;
+    clip-path: circle(15% at 0% 100%);
+    background-image: url('https://images.pexels.com/photos/11376797/pexels-photo-11376797.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.clip2:hover {
+    clip-path: circle(100%);
+    z-index: 1;
+}
+
+.clip3 {
+    position: relative;
+    top: -200%;
+    clip-path: circle(15% at 0% 0%);
+    background-image: url('https://images.pexels.com/photos/17261393/pexels-photo-17261393.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.clip3:hover {
+    clip-path: circle(100%);
+    z-index: -1;
+}
+
+.clip4 {
+    position: relative;
+    top: -300%;
+    clip-path: circle(15% at 100% 100%);
+    background-image: url('https://images.pexels.com/photos/11951680/pexels-photo-11951680.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.clip4:hover {
+    clip-path: circle(100%);
+    z-index: 1;
+}
